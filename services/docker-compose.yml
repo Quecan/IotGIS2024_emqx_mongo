@@ -2,11 +2,11 @@ version: "3.8"
 #
 volumes:
   vol-emqx-data:
-    name: foo-emqx-data
+    name: foo-emqx-data_222
 #  vol-emqx-etc:
 #    name: foo-emqx-etc
   vol-emqx-log:
-    name: foo-emqx-log
+    name: foo-emqx-log_222
 #
 
 
@@ -87,7 +87,7 @@ services:
       EMQX_AUTH__MONGO__AUTH_QUERY__PASSWORD_FIELD: "password"
       EMQX_AUTH__MONGO__AUTH_QUERY__SELECTOR: "username=%u"
 
-      ## Enable ACL query.
+      ## Enable ACL query...
       #Access control list
       EMQX_AUTH__MONGO__ACL_QUERY: "on"
       EMQX_AUTH__MONGO__ACL_QUERY__COLLECTION: "emqxauthrules"
